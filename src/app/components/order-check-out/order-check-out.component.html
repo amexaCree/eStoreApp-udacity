@@ -1,0 +1,17 @@
+<div class="check-out-panel">
+  <form #form="ngForm" (ngSubmit)="placeOrder()">
+    <label for="name" class="form-label">Full name</label><br>
+
+    <input type="text" name="name" class="form-control" required minlength="3" placeholder="(minimum 3 characters)" [(ngModel)]="name" ><br>
+
+    <label for="address" class="form-label">Adress</label><br>
+
+    <input type="text" name="address" class="form-control" required minlength="6" placeholder="(minimum 6 characters)" [(ngModel)]="address" ><br>
+
+    <label for="cardNumber" class="form-label">Credit card number</label><br>
+
+    <input type="text" name="cardNumber" class="form-control" required minlength="16" maxlength="16"  pattern="[\d]*" placeholder="(16 digit number)" [(ngModel)]="cardNumber"><br>
+
+    <button class="btn btn-primary" type="submit" [disabled]="form.invalid">Place Order</button>
+  </form>
+</div>

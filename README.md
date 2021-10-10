@@ -1,6 +1,21 @@
 # EStoreApp
 
+An front end applicaiton for an online store built with Angular.
+
+## Features
+
+Provided in this application is a store products page listing the available products, a product detail page for each product, a cart page and an order confirmation page displayed after check out.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.2.
+
+## Installation
+
+Run `npm install` in root folder to install all dependencies.
+
+> Note: To run the angular cli commands indicated in this read me please install angular cli.
+> recent version of angular-cli used to build this project runs on node v12 and above.
+
+Run `npm install --global @angular-cli` to install angular cli globally. 
 
 ## Development server
 

@@ -1,0 +1,31 @@
+
+<h2 style="text-align: center; margin-top: 40px">Your Cart</h2>
+<div *ngIf="cartItems.length >= 1" class="cart-container">
+  <div class="cart-panel">
+    <div class="cart-item" *ngFor="let item of cartItems">
+      <img class="img" [src]="item.product.url">
+      <div class="cart-item-details">
+        <h4>{{ item.product.name }}</h4>
+        <div>${{ (item.product.price * item.quantity).toFixed(2) }}</div>
+        <div style="display: flex; flex-direction: row; justify-content: space-between;" >
+          Qty: {{ item.quantity }}
+          <div style="display: inline-block">
+            <button class="small-btn qty-btn" (click)="addQuantitybyOne(item)" [disabled]="item.quantity >= 10">+1</button>
+            <button class="small-btn qty-btn" style="margin-left:10px" (click)="removeQuanitybyOne(item)" [disabled]="item.quantity <= 1">-1</button>
+          </div>
+        </div>
+        <button class="remove-item-btn small-btn" style="margin-top: 20px" (click)="removeItem(item)">Remove item</button>
+
+      </div>
+    </div>
+
+    <div class="total">Total: ${{ totalCost }} </div>
+  </div>
+
+  <app-order-check-out></app-order-check-out>
+
+</div>
+<p class="empty-cart-message" *ngIf="cartItems.length < 1">
+  Add products to cart to see them here! &nbsp; <a routerLink="/">Start shopping</a>
+</p>
+

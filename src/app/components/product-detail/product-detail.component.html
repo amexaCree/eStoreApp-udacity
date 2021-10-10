@@ -1,0 +1,26 @@
+<div class="detail-container">
+  <img class="img" [src]="product.url" />
+  <div class="detail-item">
+
+    <h3 style="margin-bottom: 16px">{{ product.name }}</h3>
+    <p>{{ product.description }}</p>
+    <p>${{ product.price * quantity }}</p>
+
+    <form *ngIf="!addedToCart" #form="ngForm" (ngSubmit)="addToCart()">
+
+      <select name="quantity" [ngModel]="quantity" (ngModelChange)="updateQty($event)">
+        <option *ngFor="let qty of qtyOptions" [value]="qty" [selected]="quantity == qty" >{{ qty }}</option>
+      </select>
+
+      <button class="btn btn-primary" style="margin-left: 10px" type="submit" [disabled]="form.invalid">Add to cart</button>
+    </form>
+
+    <div *ngIf="addedToCart">
+      <button class="btn btn-primary" (click)="goToCart()">View In Cart</button>
+    </div>
+
+    <div class="back-link">
+      <a routerLink="/">Back to product list</a>
+    </div>
+  </div>
+</div>
