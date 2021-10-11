@@ -14,6 +14,7 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { OrderConfirmationComponent } from './components/order-confirmation/order-confirmation.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { CartItemComponent } from './components/cart-item/cart-item.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     CartComponent,
     OrderCheckOutComponent,
     NavBarComponent,
-    OrderConfirmationComponent
+    OrderConfirmationComponent,
+    CartItemComponent
   ],
   imports: [
     BrowserModule,

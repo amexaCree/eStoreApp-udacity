@@ -16,8 +16,7 @@ export class CartComponent implements OnInit {
     private router: Router) {
   }
 
-  updateQty(qty: unknown, item: CartItem) {
-    const quantity = parseInt(qty as string)
+  updateQty(item: CartItem, quantity: number) {
     this.cart.updateQty(item, quantity)
     this.updateCartInfo()
   }

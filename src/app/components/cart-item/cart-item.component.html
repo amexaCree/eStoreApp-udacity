@@ -1,0 +1,15 @@
+<div class="cart-item">
+  <img class="img" [src]="item.product.url">
+  <div class="cart-item-details">
+    <h4>{{ item.product.name }}</h4>
+    <div>${{ (item.product.price * item.quantity).toFixed(2) }}</div>
+    <div style="display: flex; flex-direction: row; justify-content: space-between;" >
+      Qty: {{ item.quantity }}
+      <div style="display: inline-block">
+        <button class="small-btn qty-btn" (click)="addQuantitybyOne()" [disabled]="item.quantity >= 10">+1</button>
+        <button class="small-btn qty-btn" style="margin-left:10px" (click)="removeQuanitybyOne()" [disabled]="item.quantity <= 1">-1</button>
+      </div>
+    </div>
+    <button class="remove-item-btn small-btn" style="margin-top: 20px" (click)="removeItem()">Remove item</button>
+  </div>
+</div>
