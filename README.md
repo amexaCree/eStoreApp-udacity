@@ -2,7 +2,7 @@
 ![Version](https://img.shields.io/badge/version-0.0.0-blue.svg?cacheSeconds=2592000)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
 
-> A front-end applicaiton for an online store built with Angular.
+> A front-end applicaiton for an online store built with Angular. (See features below for more information.)
 
 ## Prerequisites
 
@@ -12,7 +12,11 @@
 
 ## Features
 
-This e-store front-end application provides a store products page listing the available products, a product detail page for each product, a cart page and an order confirmation page displayed after check out.
+This e-store front-end application provides the following features: 
+* A products page listing the available products 
+* A product detail page for each product, user can add 1-10 of an item into cart. 
+* A cart page listing all products the user has added to the cart, user can change quantity of an item or remove item from cart, and
+* An order confirmation page displayed after check out to indicate to the user that the order was successful.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.2.
 
