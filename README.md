@@ -31,7 +31,7 @@ npm install
 
 Run `npm install --global @angular/cli` to install Angular CLI globally. 
 ```sh
-npm install
+npm install --global @angular/cli
 ```
 
 ## Development server
