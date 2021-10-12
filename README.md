@@ -18,6 +18,8 @@ This e-store front-end application provides the following features:
 * A cart page listing all products the user has added to the cart, user can change quantity of an item or remove item from cart, and
 * An order confirmation page displayed after check out to indicate to the user that the order was successful.
 
+The application once started runs by default on port 4200 (https://localhost:4200). (Look at Development Server section for how to start application.) 
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.2.
 
 ## Installation
@@ -36,7 +38,7 @@ npm install --global @angular/cli
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` to start the dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 ```sh
 ng serve
 ```
