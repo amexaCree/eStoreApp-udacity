@@ -7,3 +7,9 @@ input {
   margin: 0 50px;
   min-width: 350px
 }
+
+.control {
+ font-size: 0.8em;
+ color: red;
+ margin-bottom: 10px;
+}
