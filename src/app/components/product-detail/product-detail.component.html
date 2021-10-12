@@ -8,8 +8,8 @@
 
     <form *ngIf="!addedToCart" #form="ngForm" (ngSubmit)="addToCart()">
 
-      <select name="quantity" [ngModel]="quantity" (ngModelChange)="updateQty($event)">
-        <option *ngFor="let qty of qtyOptions" [value]="qty" [selected]="quantity == qty" >{{ qty }}</option>
+      <select name="quantity" [(ngModel)]="quantity">
+        <option *ngFor="let qty of qtyOptions" [ngValue]="qty" [selected]="quantity == qty" >{{ qty }}</option>
       </select>
 
       <button class="btn btn-primary" style="margin-left: 10px" type="submit" [disabled]="form.invalid">Add to cart</button>

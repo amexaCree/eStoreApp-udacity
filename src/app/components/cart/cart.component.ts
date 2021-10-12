@@ -28,6 +28,7 @@ export class CartComponent implements OnInit {
   removeItem(item: CartItem) {
     this.cart.removeCartItem(item)
     this.updateCartInfo()
+    alert(`${item.product.name} item(s) removed from cart.`)
   }
 
   addQuantitybyOne(item: CartItem) {

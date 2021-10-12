@@ -2,7 +2,7 @@
 <h2 style="text-align: center; margin-top: 40px">Your Cart</h2>
 <div *ngIf="cartItems.length >= 1" class="cart-container">
   <div class="cart-panel">
-    <app-cart-item *ngFor="let item of cartItems"[item]="item" (itemRemoval)="removeItem($event)" (itemQtyChange)="updateQty($event.item, $event.diff)" ></app-cart-item>
+    <app-cart-item *ngFor="let item of cartItems" [item]="item" (itemRemoval)="removeItem($event)" (itemQtyChange)="updateQty($event.item, $event.diff)" ></app-cart-item>
     <div class="total">Total: ${{ totalCost }} </div>
   </div>
 

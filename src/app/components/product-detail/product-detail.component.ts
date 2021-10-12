@@ -24,9 +24,6 @@ export class ProductDetailComponent implements OnInit {
     private cart: CartService
     ) { }
 
-  updateQty(qty: unknown) {
-    this.quantity = parseInt(qty as string)
-  }
 
   addToCart() {
     this.cart.addToCart(this.product, this.quantity)
