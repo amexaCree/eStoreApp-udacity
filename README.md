@@ -18,7 +18,7 @@ This e-store front-end application provides the following features:
 * A cart page listing all products the user has added to the cart, user can change quantity of an item or remove item from cart, and
 * An order confirmation page displayed after check out to indicate to the user that the order was successful.
 
-The application once started runs by default on port 4200 (https://localhost:4200). (Look at Development Server section for how to start application.) 
+The application once started runs by default on port 4200 (http://localhost:4200). (Look at Development Server section for how to start application.) 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.2.
 
